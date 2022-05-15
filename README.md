@@ -4,7 +4,7 @@
 
 # Genius
 
-<img src="https://i.postimg.cc/VLf1J5Qx/tela-Do-Jogo.jpg" alt="Imagem da tela inicial do jogo" style="height: 239px; width: 375px">
+<img src="https://user-images.githubusercontent.com/90610113/168470194-68d0d0b8-6b24-4477-8ba6-2e77a80b19e7.jpg" style="height: 239px; width: 375px">
 
 ### Programação
 > HTML
