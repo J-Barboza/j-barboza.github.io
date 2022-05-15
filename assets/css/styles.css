@@ -30,15 +30,6 @@
 
 /**********************************/
 /* Color Guide:
-/* 
-/* #00A74A : normal-green
-/* #9F0F17 : normal-red
-/* #CCA707 : normal-yellow
-/* #094A8F : normal-blue
-/* #13ff7c : light-green
-/* #ff4c4c : light-red
-/* #fed93f : light-yellow
-/* #1c8cff : light-blue
 /* #333333 : gray
 /* #ECE7EE : center
 /* #32050C : counter-color
@@ -50,16 +41,6 @@
 /**********************************/
 
 :root {
-	--clr-normal-green:   #00A74A;
-	--clr-normal-red:     #9F0F17;
-	--clr-normal-yellow:  #CCA707;
-	--clr-normal-blue:    #094A8F;
-	
-	--clr-light-green:    #13ff7c;
-	--clr-light-red:      #ff4c4c;
-	--clr-light-yellow:   #fed93f;
-	--clr-light-blue:     #1c8cff;
-	
 	--clr-border:		  #333333;
 	--clr-center:  		  #ECE7EE;
 
@@ -70,6 +51,7 @@
 	--clr-led-off:        #32050C;
 
 	--clr-switch: 	      #3193DE;
+
 
 	--game-size: 48rem;
 	--game-border: 1.5rem solid var(--clr-border);
@@ -82,11 +64,14 @@ html {
 	font-size: 62.5%;
 }
 
-body {
-	background-image: url('/assets/img/background.jpg');
+body { 
 	font-family: Bungee, Verdana, sans-serif;
+	background: url('/assets/img/background.jpg') no-repeat center center fixed #000; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
-
 /**********************************/
 /* 2. Body
 /**********************************/
@@ -133,36 +118,39 @@ body {
 }
 
 .game__pad--tl {
-	background-color: var(--clr-normal-green);
 	border-top-left-radius: 100%;
+	background-image: linear-gradient(135deg, rgb(25, 197, 120) 0%, rgb(5, 109, 52) 100%);
 }
-
+			
 .game__pad--tr {
-	background-color: var(--clr-normal-red);
 	border-top-right-radius: 100%;
+	background: linear-gradient(225deg, rgba(231,16,43,1) 0%, rgba(142,4,21,1) 100%);
 }
-
+			
 .game__pad--bl {
-	background-color: var(--clr-normal-yellow);
 	border-bottom-left-radius: 100%;
+	background: linear-gradient(45deg, rgba(203,226,39,1) 0%, rgba(116,129,27,1) 100%);
 }
-
+			
 .game__pad--br {
-	background-color: var(--clr-normal-blue);
 	border-bottom-right-radius: 100%;
+	background: linear-gradient(325deg, rgba(39,127,226,1) 0%, rgba(16,76,143,1) 100%);
 }
 
 .game__pad--tl.game__pad--active {
-	background-color: var(--clr-light-green);
+	background: radial-gradient(circle, rgb(25, 197, 120) 25%, rgb(5, 109, 52) 100%);
 }
+
 .game__pad--tr.game__pad--active {
-	background-color: var(--clr-light-red);
+	background: radial-gradient(circle, rgba(231,16,43,1) 25%, rgba(142,4,21,1) 100%);
 }
+
 .game__pad--bl.game__pad--active {
-	background-color: var(--clr-light-yellow);
+	background: radial-gradient(circle, rgba(203,226,39,1) 25%, rgba(116,129,27,1) 100%);
 }
+
 .game__pad--br.game__pad--active {
-	background-color: var(--clr-light-blue);
+	background: radial-gradient(circle, rgba(39,127,226,1) 25%, rgba(16,76,143,1) 100%);
 }
 
 .game__pad--btn {
