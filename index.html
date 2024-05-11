@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <title>Resgate</title>
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+    </head>
+
+    <body>
+    <div id="container">
+        <div id="backgroundGame">
+            <div id="showBoard">
+                <div class="title">
+                    <img id='imgpos' src="assets/img/blueBat00.png">
+                    <p>Capture the Blue Bat</p>
+                </div>
+                <div class="showBoardText">
+                    <p>Use arrow keys <br> to move Up and Down.</p>
+                    <p>Spacebar to shot</p>
+                </div>
+                <div class="textPlay" onclick="fncStart(0)">
+                    <p>Play the game</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    </body>
+
+    <audio src="assets/sound/som.mp3" preload="auto" id="gunshotSound"></audio>
+    <audio src="assets/sound/explosao.mp3" preload="auto" id="explosionSound"></audio>
+    <audio src="assets/sound/musica_fundo.mp3" preload="auto" id="soundEffect"></audio>
+    <audio src="assets/sound/gameover.mp3" preload="auto" id="gameOverSound"></audio>
+    <audio src="assets/sound/explosao.mp3" preload="auto" id="friendDieSound"></audio>	
+    <audio src="assets/sound/resgate.mp3" preload="auto" id="rescueSound"></audio>
+
+    <script type="text/javascript" src="assets/js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="assets/js/script.js"></script> 
+    <script type="text/javascript" src="assets/js/jquery-collision.min.js"></script>
+
+</html>

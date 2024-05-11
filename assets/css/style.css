@@ -1,0 +1,508 @@
+@font-face {
+    font-family: cartoonFont;
+	src:url('/assets/font/Cartoon_Regular_5.ttf');
+}
+
+p {
+    margin: 5px;
+}
+
+body {
+    background-image:url('/assets/img/backgroundTexture1.png');
+}
+
+#container{
+	width:1100px;
+	height:auto;
+	position:relative;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+
+#backgroundGame {
+	width:1100px;
+	height:700px;
+    background-image:url('/assets/img/backgroundGame03.png');
+	border-color:rgb(161, 147, 240);
+	border-style:solid;
+    border-radius: 1%;
+}
+
+#imgpos {
+	width: 71px;
+	height: 70px;
+	position: absolute;
+	border-color: #000;
+	left: 380px;
+	top: 150px;
+}
+
+#player {
+	width: 99px;
+	height:113px;
+	position:absolute;
+	left:18px;
+	top: 50px;;
+	background-image:url('/assets/img/playerFlying.png');
+}
+
+.clPlayer {
+	background-image:url('/assets/img/playerFlying.png');
+	animation: playermoviment .8s steps(31) infinite;
+    -webkit-animation: playermoviment .8s steps(31) infinite;
+	-moz-animation: playermoviment .8s steps(31) infinite;
+	-ms-animation: playermoviment .8s steps(31) infinite;
+	-o-animation: playermoviment .8s steps(31) infinite;
+}
+
+@keyframes playermoviment {
+	from {background-position:0px;}
+	to {background-position:-3069px;}
+}
+
+
+@-webkit-keyframes playermoviment {
+   from { background-position:0px; }
+     to { background-position: -3069px; }
+}
+
+@-moz-keyframes playermoviment {
+   from { background-position:0px; }
+     to { background-position: -3069px; }
+}
+
+@-ms-keyframes playermoviment {
+   from { background-position:0px; }
+     to { background-position: -3069px; }
+}
+
+@-o-keyframes playermoviment {
+   from { background-position:0px; }
+     to { background-position: -3069px; }
+}
+
+#enemy1 {
+	width: 87px;
+	height: 89px;
+	position: absolute;
+    left: 1023px;
+    top: -80px;
+	background-image:url('/assets/img/bumblebee01.png');
+	
+}
+
+.clEnemy1 {
+    background-image:url('/assets/img/bumblebee01.png');
+    animation: play .8s steps(13) infinite;
+    -webkit-animation: play .8s steps(13) infinite;
+    -moz-animation: play .8s steps(13) infinite;
+    -ms-animation: play .8s steps(13) infinite;
+    -o-animation: play .8s steps(13) infinite; 
+}
+
+@keyframes play {
+	from {background: position 0px;}
+	to {background-position:-1131px;}
+}
+
+@-webkit-keyframes play {
+	from { background-position:    0px; }
+	  to { background-position: -1131px; }
+ }
+ 
+ @-moz-keyframes play {
+	from { background-position:    0px; }
+	  to { background-position: -1131px; }
+ }
+ 
+ @-ms-keyframes play {
+	from { background-position:    0px; }
+	  to { background-position: -1131px; }
+ }
+ 
+ @-o-keyframes play {
+	from { background-position:    0px; }
+	  to { background-position: -1131px; }
+ }
+
+#enemy2 {
+	width: 148px;
+	height: 96px;
+	position: absolute;
+	left: 962px;
+	top: 494px;
+	background-image: url('/assets/img/monsterEnemy.png');
+}
+
+.clEnemy2 {
+	background-image:url('/assets/img/monsterEnemy.png');
+	animation:anEnemy2 .7s steps(21) infinite;
+	-webkit-animation: anEnemy2 .7s steps(21) infinite;
+    -moz-animation: anEnemy2 .7s steps(21) infinite;
+    -ms-animation: anEnemy2 .7s steps(21) infinite;
+    -o-animation: anEnemy2 .7s steps(21) infinite;
+}
+
+@keyframes anEnemy2 {
+	from {background: position 0px;}
+	to {background-position: -3108px;}
+}
+
+@-webkit-keyframes anEnemy2 {
+	from { background-position:    0px; }
+	  to { background-position: -3108px; }
+ }
+ 
+ @-moz-keyframes anEnemy2 {
+	from { background-position:    0px; }
+	  to { background-position: -3108px; }
+ }
+ 
+ @-ms-keyframes anEnemy2 {
+	from { background-position:    0px; }
+	  to { background-position: -3108px; }
+ }
+ 
+ @-o-keyframes anEnemy2 {
+	from { background-position:    0px; }
+	  to { background-position: -3108px; }
+ }
+
+#friend {
+	width: 68px;
+	height:113px;
+	position: absolute;
+	left: 15px;
+	top: 464px;
+	background-image:url('/assets/img/friend.png');
+}
+
+.clFriend {
+	background-image:url('/assets/img/friend.png');
+	animation:friendRun .9s steps(21) infinite;
+	-webkit-animation: friendRun .9s steps(21) infinite;
+       -moz-animation: friendRun .9s steps(21) infinite;
+        -ms-animation: friendRun .9s steps(21) infinite;
+         -o-animation: friendRun .9s steps(21) infinite;
+}
+
+@keyframes friendRun {
+	from {background: position 0px;}
+	to {background-position:-1428px;}
+}
+
+@-webkit-keyframes friendRun {
+   from { background-position:    0px; }
+     to { background-position: -1428px; }
+}
+
+@-moz-keyframes friendRun {
+   from { background-position:    0px; }
+     to { background-position: -1428px; }
+}
+
+@-ms-keyframes friendRun {
+   from { background-position:    0px; }
+     to { background-position: -1428px; }
+}
+
+@-o-keyframes friendRun {
+   from { background-position:    0px; }
+     to { background-position: -1428px; }
+}
+
+#bluebat {
+	width: 73px;
+	height: 72px;
+	position: absolute;
+    transform: scaleX(-1);
+	left: 800px;
+	top: 404px;
+	background-image:url('/assets/img/blueBat.png');
+}
+
+.clBluebat {
+	background-image:url('ssets/img/blueBat.png');
+	animation:bluebatfly .7s steps(11) infinite;
+	-webkit-animation: bluebatfly .7s steps(11) infinite;
+    -moz-animation: bluebatfly .7s steps(11) infinite;
+    -ms-animation: bluebatfly .7s steps(11) infinite;
+    -o-animation: bluebatfly .7s steps(11) infinite;
+}
+
+@keyframes bluebatfly {
+	from {background: position 0px;}
+	to {background-position:-803px;}
+}
+
+@-webkit-keyframes bluebatfly {
+   from { background-position:    0px; }
+     to { background-position: -803px; }
+}
+
+@-moz-keyframes bluebatfly {
+   from { background-position:    0px; }
+     to { background-position: -803px; }
+}
+
+@-ms-keyframes bluebatfly {
+   from { background-position:    0px; }
+     to { background-position: -803px; }
+}
+
+@-o-keyframes bluebatfly {
+   from { background-position:    0px; }
+     to { background-position: -803px; }
+}
+
+#showBoard {
+    width:350px;
+	height:200px;
+	background-color:#FFF;
+ 	margin-left:auto;
+    margin-right:auto;
+ 	margin-top:100px;
+	text-align:center;
+	padding:5px;
+    border-radius: 5px;
+    box-shadow: 10px 5px 10px rgba(81, 134, 194, 0.637);
+    background: rgb(131,165,239);
+    background: linear-gradient(180deg, rgba(131,165,239,1) 0%, rgba(170,185,226,0.78) 18%, rgba(246,226,199,1) 100%);
+}
+
+.title {
+    font-family: cartoonFont;
+	font-size:35px;
+	color:#c41700;
+}
+
+.showBoardText {
+    font-family: cartoonFont;
+    font-size:20px;
+    color:rgb(47, 45, 161)
+}
+
+.textPlay {
+    font-family: cartoonFont;
+	font-size:30px;
+    cursor: pointer;
+	color:rgba(97, 25, 231, 0.747);
+}
+
+#shot {
+	width: 50px;
+	height: 8px;
+	position: absolute;
+	background-image: url('/assets/img/shootSmall.png');
+}
+
+#explosive1 {
+	width:148px;
+	height:148px;
+	position:absolute;
+}
+
+#explosive2 {
+	width: 149px;
+	height: 147px;
+	position: absolute;
+}
+
+#explosive3 {
+	width:282px;
+	height:282px;
+	position:absolute;
+	left: 980;
+	top: 440;
+	background-image: url('/assets/img/explosion3.png');
+}
+
+.clExplosive3 {
+	width:280px;
+	height:280px;
+	background-image:url('/assets/img/explosion3.png');
+	animation:play4 .8s steps(20) infinite;
+	-webkit-animation: play4 .8s steps(20) infinite;
+    -moz-animation: play4 .8s steps(20) infinite;
+    -ms-animation: play4 .8s steps(20) infinite;
+    -o-animation: play4 .8s steps(20) infinite;
+}
+
+@keyframes play4 {
+	from {background-position:0px;}
+	to {background-position:-5640;}
+}
+
+@-webkit-keyframes play4 {
+   from { background-position:    0px; }
+     to { background-position: -5640; }
+}
+
+@-moz-keyframes play4 {
+   from { background-position:    0px; }
+     to { background-position: -5640; }
+}
+
+@-ms-keyframes play4 {
+   from { background-position:    0px; }
+     to { background-position: -5640; }
+}
+
+@-o-keyframes play4 {
+   from { background-position:    0px; }
+     to { background-position: -5640; }
+}
+
+
+#missile {
+	width:52px;
+	height:34px;
+	position:absolute;
+    transform: rotate(90deg);
+}
+
+.missile {
+	width:52px;
+	height:34px;
+	background-image:url('/assets/img/missile.png');
+	animation:play4 .8s steps(8) infinite;
+	-webkit-animation: play4 .8s steps(8) infinite;
+    -moz-animation: play4 .8s steps(8) infinite;
+    -ms-animation: play4 .8s steps(8) infinite;
+    -o-animation: play4 .8s steps(8) infinite;
+}
+
+@keyframes play4 {
+	from {background-position:0px;}
+	to {background-position:-416px;}
+}
+
+@-webkit-keyframes play4 {
+   from { background-position:    0px; }
+     to { background-position: -416px; }
+}
+
+@-moz-keyframes play4 {
+   from { background-position:    0px; }
+     to { background-position: -416px; }
+}
+
+@-ms-keyframes play4 {
+   from { background-position:    0px; }
+     to { background-position: -416px; }
+}
+
+@-o-keyframes play4 {
+   from { background-position:    0px; }
+     to { background-position: -416px; }
+}
+
+
+
+#friendDie {
+	width:133px;
+	height:112px;
+	position:absolute;
+}
+
+.friendDying {
+	width:133px;
+	height:112px;
+	background-image:url('/assets/img/friendDying.png');
+	animation:play3 .8s steps(31) infinite;
+	-webkit-animation: play3 .8s steps(31) infinite;
+    -moz-animation: play3 .8s steps(31) infinite;
+    -ms-animation: play3 .8s steps(31) infinite;
+    -o-animation: play3 .8s steps(31) infinite;
+}
+
+@keyframes play3 {
+	from {background-position:0px;}
+	to {background-position:-4123px;}
+}
+
+@-webkit-keyframes play3 {
+   from { background-position:    0px; }
+     to { background-position: -4123px; }
+}
+
+@-moz-keyframes play3 {
+   from { background-position:    0px; }
+     to { background-position: -4123px; }
+}
+
+@-ms-keyframes play3 {
+   from { background-position:    0px; }
+     to { background-position: -4123px; }
+}
+
+@-o-keyframes play3 {
+   from { background-position:    0px; }
+     to { background-position: -4123px; }
+}
+
+#score {
+	position: absolute;
+	left: 20px;
+	top: 0px;
+}
+
+#scoreValue {
+	position: absolute;
+	left: 150px;
+	top: 0px;
+}
+
+#life {
+    width: 51px;
+    height: 49px;
+    position: absolute;
+    left: 1030px;
+    top: 0px;
+}
+
+#saveFriend {
+	position: absolute;
+	left: 20px;
+	top: 25px;
+}
+
+#saveFriendValue {
+	position: absolute;
+	left: 150px;
+	top: 25px;
+}
+
+.textScore {
+    font-family: cartoonFont;
+	font-size:30px;
+	color:#000;
+}
+
+#highScore {
+    position: absolute;
+    left: 430px;
+    top: 0px;
+}
+
+#highScoreValue {
+    position: absolute;
+    left: 630px;
+    top: 0px;
+}
+
+#jackImg {
+    background-image: url('/assets/img/jackLife.png');
+    width: 135px;
+    height: 41px;
+    position: absolute;
+    left: 940px;
+    top: 5px;
+}
+
+@media (max-width: 300px) {
+	html {
+		font-size: 40%;
+	}
+}
